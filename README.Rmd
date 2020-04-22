@@ -1,16 +1,25 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-shinyBIOL3360
-=============
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# shinyBIOL3360
 
 This package is a companion to the Mathematical Modelling module of the course BIOL3360 "Analysis and Communication of Biological Data", taught at The University of Queensland, Australia. The package contains functions to launch shiny apps that allow the user explore various mathematical models.
 
-Installation
-------------
+## Installation
 
 To install the peas package, you can run the following two lines of code in R:
 
-``` r
+```{r installation, eval = FALSE}
 install.packages("devtools")
 devtools::install_github("JanEngelstaedter/shinyBIOL3360")
 ```
