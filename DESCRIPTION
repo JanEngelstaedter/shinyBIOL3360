@@ -5,6 +5,9 @@ Version: 0.1.0
 Authors@R: c(person("Engelstaedter", "Jan", email = "j.engelstaedter@uq.edu.au", role = c("aut", "cre")),
            person("Fortuna", "Nicole", role = c("aut")))
 Description: A package containing various shiny apps that illustrate mathematical modelling techniques in ecology and evolution. These apps support the module "Mathematical modelling", part of BIOL3360 and taught by Jan Engelstaedter at The University of Queensland, Australia.
+Imports: 
+  shiny,
+  deSolve
 License: CC0
 Encoding: UTF-8
 LazyData: true
