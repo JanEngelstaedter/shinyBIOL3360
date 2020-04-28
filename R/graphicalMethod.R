@@ -22,8 +22,8 @@ plotGraphicalMethod <- function(rate=2, initialPop=0.05, gens=100) {
 	for(i in 1:gens)
 	  x[i+1] <- rate * x[i] * (1 - x[i])
 
-	lines(x = rep(x, each = 2)[-2*length(x)],
-	      y = c(0, rep(x[-length(x)], each = 2)),
+	lines(x = rep(x[-length(x)], each = 2),
+	      y = c(0, rep(x[c(-1, -length(x))], each = 2), x[length(x)]),
 	      type="l", col="blue")
 
 	plot(x=0:gens, y=x,ylim=c(0,1), xlim=c(0, gens),
@@ -47,8 +47,8 @@ appGraphicalMethod <- shinyApp(
 				value = 0.05, step = 0.01),
 
 			sliderInput("gens", "Generations:",
-				min = 50, max = 500,
-				value = 100, step = 50)
+				min = 1, max = 200,
+				value = 50, step = 1)
 
 			),
 

@@ -76,8 +76,6 @@ epidemiologyDynamics <- function(launchBrowser = FALSE) {
 }
 
 
-
-
 #' Poisson process
 #'
 #' Launches a shiny app illustrating the Poisson process for different rates.
