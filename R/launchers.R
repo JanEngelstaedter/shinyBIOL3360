@@ -53,8 +53,6 @@ alleeEffectDynamics <- function(launchBrowser = FALSE) {
 }
 
 
-
-
 #' Epidemiological ODE models
 #'
 #' Launches a shiny app that interatively plots the dynamics of three commonly used epidemiological models: the SI, SIS and SIR model.
@@ -75,5 +73,24 @@ alleeEffectDynamics <- function(launchBrowser = FALSE) {
 epidemiologyDynamics <- function(launchBrowser = FALSE) {
   if (launchBrowser) runApp(appEpidemiologyDynamics, launch.browser = TRUE)
   else runApp(appEpidemiologyDynamics)
+}
+
+
+
+
+#' Poisson process
+#'
+#' Launches a shiny app illustrating the Poisson process for different rates.
+#'
+#' @param launch.browser If this is FALSE (the default option), the shiny app will be launched using default settings (usually a new window created by RStudio). If set to TRUE, the app will be opened in the system's default web browser.
+#'
+#' @details The Poisson process takes place over a fixed time period of 100 units.
+#'
+#' @import shiny
+#' @export
+#'
+poissonProcess <- function(launchBrowser = FALSE) {
+  if (launchBrowser) runApp(appPoissonProcess, launch.browser = TRUE)
+  else runApp(appPoissonProcess)
 }
 
