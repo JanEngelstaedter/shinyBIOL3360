@@ -17,7 +17,7 @@ This package is a companion to the Mathematical Modelling module of the course B
 
 ## Installation
 
-To install the peas package, you can run the following two lines of code in R:
+To install this package, you can run the following two lines of code in R:
 
 ```{r installation, eval = FALSE}
 install.packages("devtools")
